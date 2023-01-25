@@ -1,0 +1,33 @@
+{
+  "name": "garfish-VNode-diff-performance",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev:main": "webpack serve --config=src/main-app/webpack.config.js",
+    "dev:sub": "webpack serve --config=src/micro-app/webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/workkk98/garfish-VNode-diff-performance.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/workkk98/garfish-VNode-diff-performance/issues"
+  },
+  "homepage": "https://github.com/workkk98/garfish-VNode-diff-performance#readme",
+  "dependencies": {
+    "@garfish/bridge-vue-v2": "^1.13.3",
+    "garfish": "^1.13.3",
+    "vue": "^2"
+  },
+  "devDependencies": {
+    "html-webpack-plugin": "^5.5.0",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.11.1"
+  }
+}
