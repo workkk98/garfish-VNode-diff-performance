@@ -6,6 +6,7 @@ module.exports = {
   entry: path.resolve(__dirname, './index.js'),
   output: {
     path: path.resolve(__dirname, 'dist'),
+    publicPath: 'http://127.0.0.1:9001/',
   },
   devServer: {
     port: 9001,

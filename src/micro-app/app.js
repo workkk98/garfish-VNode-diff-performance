@@ -2,6 +2,9 @@ function createThousandsElement(filterCallback, mapCallback) {
   return new Array(1000).fill(0).filter(filterCallback).map(mapCallback)
 }
 
+import('./async-chunk').then((val) => {
+  console.log(val)
+})
 
 export default {
   name: 'App',

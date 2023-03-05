@@ -4,6 +4,21 @@ import App from './app'
 
 Vue.config.performance = true
 
+function referenceProperty() {
+  const watcher = {
+    notify() {
+      console.log('window.whiteList.foo', window.whiteList.foo)
+    }
+  }
+
+  window.currentTarget = watcher
+
+  console.log('window.whiteList.foo', window.whiteList.foo)
+}
+
+referenceProperty()
+
+
 if (!window.Garfish) {
   new Vue({
     el: '#app',
